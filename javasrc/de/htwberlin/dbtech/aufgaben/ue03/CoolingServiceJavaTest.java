@@ -28,7 +28,8 @@ public class CoolingServiceJavaTest {
     private static final Logger L = LoggerFactory.getLogger(CoolingServiceJavaTest.class);
     private static IDatabaseConnection dbTesterCon = null;
 
-    private static final ICoolingService cs = new CoolingService();
+    //private static final ICoolingService cs = new CoolingService();
+    private static final ICoolingService cs = new CoolingServiceDao();
 
     @BeforeClass
     public static void setUp() {
